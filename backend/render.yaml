@@ -5,9 +5,7 @@ services:
     buildCommand: npm install
     startCommand: node server.js
     envVars:
-      - key: MONGODB_URI
-        value: your-mongodb-uri
+      - key: MONGODB_URI  # La variable se configura MANUALMENTE en Render
+        syncEnv: true
       - key: JWT_SECRET
-        value: your-secret-key
-      - key: NODE_ENV
-        value: production
+        syncEnv: true
