@@ -1,8 +1,0 @@
-services:
-  - type: static_site
-    name: estrapol-frontend
-    buildCommand: npm install && npm run build
-    publish: dist
-    envVars:
-      - key: VITE_API_URL
-        value: https://estrapol.onrender.com
